@@ -8,24 +8,26 @@ function form() {
   return (
     <div>
       <h1 className="text-3xl font-bold text-red-300 text-center mt-10">
-        {" "}
         controlled components
       </h1>
       <form
-        action=" "
-        method="get"
+        onSubmit={(e) => {
+          e.preventDefault();
+        }
+      }
+
         className="flex flex-col gap-4 w-1/2 mx-auto mt-10"
       >
         <input
-          type="text font-bold"
+          type="text"
           className="border-2 border-black rounded-md p-2"
-          placeholder="enter your name"
+          placeholder="Enter your name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <input
           type="text"
-          placeholder="enter your  email"
+          placeholder="Enter your E-mail"
           className="border-2 border-black rounded-md p-2"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -33,14 +35,14 @@ function form() {
         <input
           type="password"
           className="border-2 border-black rounded-md p-2"
-          placeholder="enter password"
+          placeholder="Enter Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
         <input
           type="text"
           className="border-2 border-black rounded-md p-2"
-          placeholder=" your address"
+          placeholder=" your Address"
           value={address}
           onChange={(e) => setAddress(e.target.value)}
         />
@@ -55,3 +57,6 @@ function form() {
   );
 }
 export default form;
+
+
+
