@@ -7,7 +7,7 @@ function form() {
   const [address, setAddress] = useState("");
   return (
     <div>
-      <h1 className="text-3xl font-bold text-red-300 text-center">
+      <h1 className="text-3xl font-bold text-red-300 text-center mt-10">
         {" "}
         controlled components
       </h1>
