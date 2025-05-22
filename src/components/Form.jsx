@@ -16,7 +16,7 @@ function form() {
         }
       }
 
-        className="flex flex-col gap-4 w-1/2 mx-auto mt-10 bg-amber-600 p-10 rounded-lg shadow-lg"
+        className="flex flex-col gap-4 w-1/2 mx-auto mt-10  p-10 rounded-lg shadow-lg"
       >
         <input
           type="text"

@@ -41,7 +41,7 @@ function Validation() {
     }
   };
   return (
-    <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-4 w-1/2 mx-auto mt-10 bg-fuchsia-500 p-10 rounded-lg shadow-lg">
+    <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-4 w-1/2 mx-auto mt-10  p-10 rounded-lg shadow-lg">
       <div>
         <h2 className="text-2xl font-bold text-green-800 text-center">Validation Form</h2>
         <p className="text-lg text-red-700">Please fill in the form below:</p>
