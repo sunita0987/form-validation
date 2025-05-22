@@ -9,8 +9,8 @@ function App() {
   return (
     <> 
 <Form/>
-{/* <Uncontrolled/> 
- <Validation/> */}
+<Uncontrolled/> 
+ <Validation/>
     </>
   )
 }

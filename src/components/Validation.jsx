@@ -6,39 +6,31 @@ function Validation() {
     email: "",
     password: "",
   });
-
   const [errors, setErrors] = useState({});
-
   const validate = () => {
     const newErrors = {};
-
     if (!formData.name.trim()) {
       newErrors.name = "Name is required";
     }
-
     if (!formData.email) {
       newErrors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = "Email is invalid";
     }
-
     if (!formData.password) {
       newErrors.password = "Password is required";
     } else if (formData.password.length < 6) {
       newErrors.password = "Password must be at least 6 characters";
     }
-
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
-
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
@@ -48,12 +40,11 @@ function Validation() {
       setErrors({});
     }
   };
-
   return (
-    <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-4 w-1/2 mx-auto mt-10">
+    <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-4 w-1/2 mx-auto mt-10 bg-fuchsia-500 p-10 rounded-lg shadow-lg">
       <div>
         <h2 className="text-2xl font-bold text-green-800 text-center">Validation Form</h2>
-        <p className="text-sm text-gray-500">Please fill in the form below:</p>
+        <p className="text-lg text-red-700">Please fill in the form below:</p>
         <label>Name:</label>
         <br />
         <input
@@ -66,7 +57,6 @@ function Validation() {
         />
         {errors.name && <p style={{ color: "red" }}>{errors.name}</p>}
       </div>
-
       <div>
         <label>Email:</label>
         <br />
@@ -80,7 +70,6 @@ function Validation() {
         />
         {errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
       </div>
-
       <div>
         <label>Password:</label>
         <br />
@@ -103,5 +92,4 @@ function Validation() {
     </form>
   );
 }
-
 export default Validation;
