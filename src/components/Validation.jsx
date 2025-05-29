@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 function Validation() {
   const [formData, setFormData] = useState({
     name: "",
@@ -44,13 +43,13 @@ function Validation() {
     <form
       onSubmit={handleSubmit}
       noValidate
-      className="flex flex-col gap-4 w-1/2 mx-auto mt-10  p-10 rounded-lg shadow-lg"
+      className="flex flex-col gap-4 w-1/2 mx-auto mt-10  p-10 rounded-lg shadow-lg bg-yellow-600"
     >
       <div>
         <h2 className="text-2xl font-bold text-green-800 text-center">
           Validation Form
         </h2>
-        <p className="text-lg text-red-700">Please fill in the form below:</p>
+        <p className="text-lg text-red-800">Please fill in the form below:</p>
         <label>Name:</label>
         <br />
         <input

@@ -21,10 +21,6 @@ function App() {
       <Uncontrolled />
       <Validation />
       <ImageUpload />
-      {/* <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/product/:id" element={<Product />} />
-      </Routes> */}
     </Router>
   );
 }

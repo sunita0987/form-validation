@@ -10,8 +10,10 @@ function Uncontrolled() {
     alert(`your name: ${nameRef.current.value}`);
   };
   return (
-    <div className="flex flex-col gap-4 w-1/2 mx-auto mt-10  p-10 rounded-lg shadow-lg">
-      <h2 className="text-2xl font-bold text-green-950 text-center"> Uncontrolled Component </h2>
+    <div className="flex flex-col gap-4 w-1/2 mx-auto mt-10  p-10 rounded-lg shadow-lg bg-fuchsia-600">
+      <h2 className="text-2xl font-bold text-green-950 text-center">
+        Uncontrolled Component
+      </h2>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <input
           type="text"

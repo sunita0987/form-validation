@@ -7,17 +7,15 @@ function form() {
   const [address, setAddress] = useState("");
   return (
     <div>
-      <h1 className="text-3xl font-bold text-red-300 text-center mt-10">
-        controlled components
-      </h1>
       <form
         onSubmit={(e) => {
           e.preventDefault();
-        }
-      }
-
-        className="flex flex-col gap-4 w-1/2 mx-auto mt-10  p-10 rounded-lg shadow-lg"
+        }}
+        className="flex flex-col gap-4 w-1/2 mx-auto mt-10  p-10 rounded-lg shadow-lg bg-teal-600"
       >
+        <h1 className="text-3xl font-bold text-red-300 text-center mt-5 mb-5">
+          Controlled Components
+        </h1>
         <input
           type="text"
           className="border-2 border-black rounded-md p-2"
@@ -57,6 +55,3 @@ function form() {
   );
 }
 export default form;
-
-
-
