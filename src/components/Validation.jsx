@@ -41,17 +41,23 @@ function Validation() {
     }
   };
   return (
-    <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-4 w-1/2 mx-auto mt-10  p-10 rounded-lg shadow-lg">
+    <form
+      onSubmit={handleSubmit}
+      noValidate
+      className="flex flex-col gap-4 w-1/2 mx-auto mt-10  p-10 rounded-lg shadow-lg"
+    >
       <div>
-        <h2 className="text-2xl font-bold text-green-800 text-center">Validation Form</h2>
+        <h2 className="text-2xl font-bold text-green-800 text-center">
+          Validation Form
+        </h2>
         <p className="text-lg text-red-700">Please fill in the form below:</p>
         <label>Name:</label>
         <br />
         <input
           type="text"
-          name="name" 
+          name="name"
           className="border-2 border-black rounded-md p-2"
-            placeholder="Enter your name"
+          placeholder="Enter your name"
           value={formData.name}
           onChange={handleChange}
         />
@@ -76,19 +82,19 @@ function Validation() {
         <input
           type="password"
           name="password"
-            className="border-2 border-black rounded-md p-2"
-            placeholder="Enter your password"
+          className="border-2 border-black rounded-md p-2"
+          placeholder="Enter your password"
           value={formData.password}
           onChange={handleChange}
         />
         {errors.password && <p style={{ color: "red" }}>{errors.password}</p>}
       </div>
-       <button
-          type="submit"
-          className=" w-20 h-10 rounded-2xl bg-blue-500 text-white text-xl cursor-pointer hover:bg-blue-700 transition duration-300 ease-in-out"
-        >
-          Submit
-        </button>
+      <button
+        type="submit"
+        className=" w-20 h-10 rounded-2xl bg-blue-500 text-white text-xl cursor-pointer hover:bg-blue-700 transition duration-300 ease-in-out"
+      >
+        Submit
+      </button>
     </form>
   );
 }
