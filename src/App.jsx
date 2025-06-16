@@ -9,7 +9,8 @@ import ImageUpload from "./components/ImageUpload";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
-// import SearchParams from "./components/SearchParams"
+// import SearchParams from "./components/SearchParams";
+import Email from "./components/Email";
 function App() {
   return (
     <Router>
@@ -24,8 +25,8 @@ function App() {
       <Validation />
       <ImageUpload />
       {/* <SearchParams/> */}
+      <Email/>
     </Router>
   );
 }
-
 export default App;
