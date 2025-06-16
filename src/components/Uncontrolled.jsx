@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-
 function Uncontrolled() {
   const nameRef = useRef(null);
   const emailRef = useRef(null);
@@ -49,5 +48,4 @@ function Uncontrolled() {
     </div>
   );
 }
-
 export default Uncontrolled;
