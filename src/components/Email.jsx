@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+
 const Email = () => {
   const form = useRef();
   const sendEmail = (e) => {
@@ -26,31 +27,31 @@ const Email = () => {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="space-y-4 p-4 bg-emerald-700 shadow-md max-w-md mx-auto rounded"
+      className="space-y-4 p-4 bg-sky-600 shadow-md max-w-md mx-auto rounded-xl mb-20"
     >
       <input
         type="text"
         name="user_name"
         placeholder="Your Name"
         required
-        className="w-full border p-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full border p-2 border-white rounded-md focus:outline-none focus:ring-2 focus:ring-amber-400"
       />
       <input
         type="email"
         name="user_email"
         placeholder="Your Email"
         required
-        className="w-full border p-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full border p-2 border-white rounded-md focus:outline-none focus:ring-2 focus:ring-amber-400"
       />
       <textarea
         name="message"
         placeholder="Your Message"
         required
-        className="w-full border p-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full border p-2 border-white rounded-md focus:outline-none focus:ring-2 focus:ring-amber-400"
       />
       <button
         type="submit"
-        className="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer hover:bg-blue-600 transition duration-300"
+        className="bg-fuchsia-700 text-white px-7 py-2 rounded-3xl cursor-pointer hover:bg-fuchsia-500 transition duration-300 hover:text-black font-bold shadow-lg"
       >
         Send
       </button>
@@ -58,4 +59,3 @@ const Email = () => {
   );
 };
 export default Email;
-

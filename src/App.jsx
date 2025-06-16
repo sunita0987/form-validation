@@ -9,7 +9,7 @@ import ImageUpload from "./components/ImageUpload";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
-// import SearchParams from "./components/SearchParams";
+import SearchParams from "./components/SearchParams";
 import Email from "./components/Email";
 function App() {
   return (
@@ -18,14 +18,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product/:id" element={<Product />} />
-        {/* <Route path="/SearchParams" element={ <SearchParams/>} /> */}
+        <Route path="/search" element={<SearchParams />} />
       </Routes>
       <Form />
       <Uncontrolled />
       <Validation />
       <ImageUpload />
-      {/* <SearchParams/> */}
-      <Email/>
+      <Email />
     </Router>
   );
 }
